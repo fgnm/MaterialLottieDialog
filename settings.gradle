@@ -1,0 +1,2 @@
+include ':app', ':materiallottiedialog'
+rootProject.name='Material Lottie Dialog'
