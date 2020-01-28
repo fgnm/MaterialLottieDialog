@@ -1,6 +1,24 @@
+apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+
+publish {
+
+    def groupProjectID = 'com.fgnm.materiallottiedialog'
+    def artifactProjectID = 'materiallottiedialog'
+    def publishVersionID = '0.1.0'
+
+    userOrg = 'fgnm'
+    repoName = 'MaterialLottieDialog'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'Material Design Dialog with Lottie (AirBnB) animation'
+    website = 'https://github.com/fgnm/MaterialLottieDialog'
+}
+
+
 android {
     compileSdkVersion 28
 
